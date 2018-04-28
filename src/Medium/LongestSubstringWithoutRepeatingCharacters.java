@@ -51,8 +51,21 @@ public class LongestSubstringWithoutRepeatingCharacters {
         String st1 = "aaaaaaaaaa";
         String st2 = "abcdefghij";
         String st3 = "asdfabczxb";
+        String st4 = "a;slkjdfio23j49njasodijfs9023j4523hy80923uj4iojaosfjoiweriojaiofjsjfisjeoijarkjwierjoiwjrjsdjf" +
+                "sldjfiowajoijefjsoifjoaijf;jeaoijsdl;jfioawjfiosjdkljieonro2j32jijf0w9jefnxcu89170934j2jioijweoiaji" +
+                "lksjdfiojj2sdf02kjlsjdf2kljyangoiuiowerynihoashaeeekosldfyangsjopinjidf2341edsfsdfererewrwerewrwl3o" +
+                "nisouf83ysagklajsfthisgodmodriengkdyasneyangjfeioskgufjosengjzhengzhoajingyangjinboaoluiiujfeusaejn" +
+                "gsklgjjisdthiskjslioeno32uiosdjfklasjdfkj20978975ojsnoujciovjieojrio32jjklsjdfio3j2jkljdsklfjisdsdf" +
+                "1230456789qwertyuiop[];lkjhgfdsazxvbnm,./1241546589d4sfeajiojfeoo2i3jkjsidofajsdkjfijflkjeijlskdjff";
+        String st5 = st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4 + st4;
+
+        long startTime = System.currentTimeMillis();
         System.out.println(lc.lengthOfLongestSubstring(st1));
         System.out.println(lc.lengthOfLongestSubstring(st2));
         System.out.println(lc.lengthOfLongestSubstring(st3));
+        System.out.println(lc.lengthOfLongestSubstring(st4));
+        System.out.println(lc.lengthOfLongestSubstring(st5));
+        long endTime = System.currentTimeMillis();
+        System.out.println("程序运行时间："+ (endTime - startTime) +"ms");
     }
 }
